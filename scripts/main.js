@@ -1,4 +1,4 @@
-﻿'use strict';
+'use strict';
 
 alert("Hello!")
 let name1 = prompt("What's your name?","null");
