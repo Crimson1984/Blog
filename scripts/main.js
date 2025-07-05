@@ -2,7 +2,7 @@
 
 alert("Hello!")
 let name1 = prompt("What's your name?","null");
-if ( name1 == "null"){
+if ( name1 == "null"|| name1 == null || name1 == "" || name1 == " "){
     alert("I'm serious,don't broke my heart😢");
 }
 else{
