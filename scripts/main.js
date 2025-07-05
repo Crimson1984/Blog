@@ -1,42 +1,16 @@
-const myImage = document.querySelector("img");
+﻿'use strict';
 
-myImage.onclick = () => {
-    const mySrc = myImage.getAttribute("src");
-    if (mySrc === "images/Dick1.png")
-    {
-        myImage.setAttribute("src", "images/Dick2.png");
+alert("Hello!")
+let name1 = prompt("What's your name?","null");
+if ( name1 == "null"){
+    alert("I'm serious,don't broke my heart😢");
+}
+else{
+    let giMe50 = confirm(`${name1},今天是疯狂星期四🎉,V我50🙏`);
+    if(giMe50 == true){
+        alert(`Thx ${name1},you are so kind😚!`)
     }
-    else
-    {
-        myImage.setAttribute("src", "images/Dick1.png");
-    }
-};
-
-let myButton = document.querySelector("button");
-let myHeading = document.querySelector("h1");
-
-
-function setUserName()
-{
-    const myName = prompt("Please enter your name.");
-    if (!myName) {
-        setUserName();
-    } else {
-        localStorage.setItem("name", myName);
-        myHeading.textContent = `Hi there, ${myName}`;
+    else{
+        alert(`Nothing you can do to fix our relationship,${name1}😢`);
     }
 }
-
-if (!localStorage.getItem("name"))
-{
-    setUserName();
-}
-else
-{
-    const storedName = localStorage.getItem("name");
-    myHeading.textContent = `Hi there, ${storedName}`;
-}
-
-myButton.onclick = function () {
-    setUserName();
-};

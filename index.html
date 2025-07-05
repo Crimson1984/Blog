@@ -1,27 +1,99 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 
-<head>
-    <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width" />
-    <title>Crimson's Blog</title>
-    <link href="styles/style.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
-</head>
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width" />
+        <title>Blog Crimson</title>
+        <link href="styles/style.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+    </head>
 
-   
-<body>
+    
+    <body>
 
-    <h1><i>Hi there</i> </h1>
-    <hr>
-    <!--<img src="images/Vincent_van_Gogh_-_Dr_Paul_Gachet.png" alt="Dr Paul Gachet" width="500" height="613">-->
-    <img src="images/Dick1.png" alt="Dr Paul Gachet" width="500" height="613">
+        <script src="scripts/main.js"></script>
 
-    <p>Can I <a href="https://vdse.bdstatic.com/192d9a98d782d9c74c96f09db9378d93.mp4"><u>help</u></a> you ?</p>
+        <header class="header">
+            <button class="menu">&#9776;</button>
 
-    <button>Change user</button>
-    <script src="scripts/main.js"></script>
-</body>
+            </button>
+
+            <a href="https://www.half-life.com/" class="logo-link">
+                <img src="images/freeman.png"  alt="Dr. Gordon Freeman" class="logo"/>
+            </a>
+            
+            <h1 class="title"><i>Crimson's Blog</i></h1>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="test.html">Test</a></li>
+                    <li><a href="form.html">Form</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <blockquote cite="https://www.george-orwell.org/1984/0.html">
+                <a href="https://www.george-orwell.org/1984/0.html" target="_blank">
+                    <h1><i>Sh! Big brother is watching.</i></h1>
+                </a>
+            </blockquote>
+            
+            <section class="TheCrushingBore">
+                <article>
+                    <h1>The Crushing Bore</h1>
+
+                    <p>By Chris Mills</p>
+
+                    <h2>Chapter 1: The dark night</h2>
+
+                    <p>
+                    It was a dark night. Somewhere, an owl hooted. The rain lashed down on the…
+                    </p>
+
+                    <h2>Chapter 2: The eternal silence</h2>
+
+                    <p>Our protagonist could not so much as a whisper out of the shadowy figure…</p>
+
+                    <h3>The specter speaks</h3>
+
+                    <p>
+                    Several more hours had passed, when all of a sudden the specter sat bolt
+                    upright and exclaimed, "Please have mercy on my soul!"
+                    </p>              
+             </article>
+            </section>
+           
+            <video autoplay
+            preload="auto"
+            poster="images/cc.png"
+            controls
+            style="width:75vw;
+                height:75vh;
+                display:block;
+                margin: 0 auto;">
+                <source src="videos\cells.mp4" type="video/mp4">>
+                <p>
+                    hey you,you are finally awake.
+                </p>
+            </video>
+
+        
+           
+        </main>
+
+
+        <footer>
+                <div>
+                    <p><a href="mailto:garvofadge@foxmail.com">Would you send me a email?</a></p>
+                    <p>Follow me on <a href="https://github.com/Crimson1984" target="_blank">Github</a> !</p>
+                    <p>Or need <a href="https://vdse.bdstatic.com/192d9a98d782d9c74c96f09db9378d93.mp4" target="_blank">help</a> ?</p>
+                </div>
+                <p class="copyright">&copy; 1984 Crimson's Blog</p>
+        </footer>
+    </body>
 
 </html>
 

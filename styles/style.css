@@ -1,22 +1,117 @@
 html {
-    font-size: 10px; /*表示“像素（pixel）”: 基础字号为 10 像素 */
-    font-family: "Open Sans", sans-serif; /*这应该是你从 Google Fonts 得到的其余输出。*/
-    background-color: #808080;
+    font-size: 10px; 
+    font-family: "Open Sans", sans-serif; 
+    background-color: #121111;
+    background-image: url("../images/tdsotm_remove.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    background-attachment:scroll;
+}
+
+a{
+    color: #dbdbdb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+    padding: 30px,10px;
+    margin:30px;
+    background-position: center;
+    height: 100px;;
+}
+
+header h1 {
+    color: #dbdbdb;
+    text-shadow: 6px 6px 9px black;
+    position: absolute;
+    left:25vw;
+    font-size: 60px;
+    margin: 0;
+    
+}
+
+header img{
+    height: 80px;
+    width: auto;
+    position: absolute;
+    top:40px;
+    left: 21vw;
+}
+
+header ul{
+    position:absolute;
+    right: 10vw;
+    top:0;
+    line-height: 160px;
+    color: #dbdbdb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header li{
+    display:inline;
+    margin-right:4vw;
+    font-size: 30px;
+}
+
+.menu{
+    display:none;
+}
+
+section {
+    border:5px solid #444444;
+    padding: 30px,10px;
+    margin:30px;
+    background-color:rbga(0,0,0, 0.3);  /* 黑色背景，50% 透明 */
+    backdrop-filter: blur(20px); /* 背景模糊 */
+    border-radius: 20px;
+    color: white;  /* 文字依然完全不透明 */
 }
 
 
-h1 {
+blockquote h1{
     margin: 0px;
-    padding: 20px 0;
-    color: #ffffff;
+    padding: 5px 0;
+    color: #ceb6b6;
     text-shadow: 6px 6px 9px black;
     text-align: center;
-    font-size: 60px;
+    font-size: 30px;
+}
+h1 {
+    margin: 0px;
+    padding: 5px 0;
+    color: #dbdbdb;
+    text-shadow: 6px 6px 9px black;
+    text-align: center;
+    font-size: 40px;
 }
 
-p,
-li {
-    color: #ffffff;
+h2,h3{
+    margin: 0px;
+    padding: 5px 0;
+    color: #dbdbdb;
+    text-shadow: 6px 6px 9px black;
+    text-align: center;
+    font-size: 20px;
+}
+
+p {
+    color: #dbdbdb;
     font-size: 16px;
     line-height: 2;
     letter-spacing: 1px;
@@ -34,11 +129,59 @@ img {
     margin: 0 auto;
 }
 
-hr {
-    border: none;
-    border-top: 3px double #333;
-    color: #333;
-    overflow: visible;
+
+footer div{
+    display: flex;
+    justify-content: center;
+    gap: 4vw;
     text-align: center;
-    height: 5px;
+}
+footer div p{
+    margin:0;
+}
+
+.copyright {
+    color: #8d8d8d;
+    display:flex;
+    justify-content: center;
+    font-size: 14px;
+    margin: 0;
+}
+
+audio{
+    display:block;
+    margin: 0 auto;
+}
+
+/* 响应式设计语法 */
+
+@media screen and (max-width: 768px){
+    header ul{
+        display:none;
+    }
+    .logo{
+        display:none
+    }
+    
+    header h1{
+        left:50%;
+        transform: translateX(-50%);
+    }
+
+    .menu{
+        display:block;
+        background-color: transparent;
+        color: #dbdbdb;
+        font-size: 30px;
+        position: absolute;
+        top:15px;
+        border: none;
+        cursor: pointer;
+
+    }
+
+    footer div{
+        display:flex;
+        flex-direction: column;
+    }
 }
