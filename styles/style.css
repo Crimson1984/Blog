@@ -164,6 +164,7 @@ audio{
     }
     
     header h1{
+        font-size:50px;
         left:50%;
         transform: translateX(-50%);
     }
@@ -174,9 +175,10 @@ audio{
         color: #dbdbdb;
         font-size: 30px;
         position: absolute;
-        top:15px;
+        top:25px;
         border: none;
         cursor: pointer;
+        left:20px;
 
     }
 
